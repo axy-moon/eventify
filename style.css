@@ -1,83 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
+
 /* -----------------company----------------------- */
+
 .company {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .company-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .img {
-  width: 100%;
-  margin: 1rem 0rem 0rem 2rem;
+    width: 100%;
+    margin: 1rem 0rem 0rem 2rem;
 }
 
 .img img {
-  width: 100%;
+    width: 100%;
 }
 
 .company-info {
-  width: 100%;
-  margin-right: 4rem;
+    width: 100%;
+    margin-right: 4rem;
 }
 
 .company-info span {
-  font-size: 2.5rem;
-  font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-.company-info span .our {
-  color: #ffdc0e;
+.company-info span {
+    color: #ffdc0e;
 }
 
-.company-info p{
-  font-size: 1.1rem;
+.our {
+    animation-name: colorchange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: 50px !important;
 }
+
+@keyframes colorchange {
+    25% {
+        color: rgb(1, 129, 91);
+    }
+    50% {
+        color: #3b3b6d;
+    }
+    100% {
+        color: rgb(123, 123, 46);
+    }
+}
+
+.company-info p {
+    font-size: 1.1rem;
+}
+
+
 /* ----------------------------------------------- */
+
+
 /* ------------------------------footer---------------------------------------- */
+
 footer {
     background: #000;
     width: 100%;
     bottom: 0;
     left: 0;
-  }
-  
-  footer .content {
+}
+
+footer .content {
     max-width: 1250px;
     margin: auto;
     padding: 30px 40px 40px 40px;
-  }
-  footer .content .top {
+}
+
+footer .content .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
-  }
-  .content .top .logo-details {
+}
+
+.content .top .logo-details {
     color: #fdd166;
     font-size: 30px;
-  }
-  .content .top .media-icons {
+}
+
+.content .top .media-icons {
     display: flex;
-  }
-  .content .top .media-icons a {
+}
+
+.content .top .media-icons a {
     height: 40px;
     width: 40px;
     margin: 0 8px;
@@ -88,39 +117,45 @@ footer {
     font-size: 17px;
     text-decoration: none;
     transition: all 0.4s ease;
-  }
-  .top .media-icons a:nth-child(1) {
+}
+
+.top .media-icons a:nth-child(1) {
     background: #4267b2;
-  }
-  .top .media-icons a:nth-child(1):hover {
+}
+
+.top .media-icons a:nth-child(1):hover {
     color: #4267b2;
     background: #fff;
-  }
-  
-  .top .media-icons a:nth-child(2) {
+}
+
+.top .media-icons a:nth-child(2) {
     background: #e1306c;
-  }
-  .top .media-icons a:nth-child(2):hover {
+}
+
+.top .media-icons a:nth-child(2):hover {
     color: #e1306c;
     background: #fff;
-  }
-  
-  footer .content .link-boxes {
+}
+
+footer .content .link-boxes {
     width: 100%;
     display: flex;
     justify-content: space-between;
-  }
-  footer .content .link-boxes .box {
+}
+
+footer .content .link-boxes .box {
     width: calc(100% / 5 - 10px);
-  }
-  .content .link-boxes .box .link_name {
+}
+
+.content .link-boxes .box .link_name {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
     position: relative;
-  }
-  .link-boxes .box .link_name::before {
+}
+
+.link-boxes .box .link_name::before {
     content: "";
     position: absolute;
     left: 0;
@@ -128,27 +163,32 @@ footer {
     height: 2px;
     width: 35px;
     background: #fdd166;
-  }
-  .content .link-boxes .box li {
+}
+
+.content .link-boxes .box li {
     margin: 6px 0;
     list-style: none;
-  }
-  .content .link-boxes .box li a {
+}
+
+.content .link-boxes .box li a {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
     opacity: 0.8;
     transition: all 0.4s ease;
-  }
-  .content .link-boxes .box li a:hover {
+}
+
+.content .link-boxes .box li a:hover {
     opacity: 1;
     text-decoration: underline;
-  }
-  .content .link-boxes .input-box {
+}
+
+.content .link-boxes .input-box {
     margin-right: 55px;
-  }
-  .link-boxes .input-box input {
+}
+
+.link-boxes .input-box input {
     height: 40px;
     width: calc(100% + 55px);
     outline: none;
@@ -159,12 +199,14 @@ footer {
     font-size: 15px;
     color: #fff;
     margin-top: 5px;
-  }
-  .link-boxes .input-box input::placeholder {
+}
+
+.link-boxes .input-box input::placeholder {
     color: #afafb6;
     font-size: 16px;
-  }
-  .link-boxes .input-box input[type="button"] {
+}
+
+.link-boxes .input-box input[type="button"] {
     background: #fff;
     color: #140b5c;
     border: none;
@@ -174,35 +216,46 @@ footer {
     opacity: 0.8;
     cursor: pointer;
     transition: all 0.4s ease;
-  }
-  .input-box input[type="button"]:hover {
+}
+
+.input-box input[type="button"]:hover {
     opacity: 1;
-  }
-  footer .bottom-details {
+}
+
+footer .bottom-details {
     width: 100%;
     background: #000;
     border-top: 0.5px solid #fff;
-  }
-  footer .bottom-details .bottom_text {
+}
+
+footer .bottom-details .bottom_text {
     max-width: 1250px;
     margin: auto;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
-  }
-  .bottom-details .bottom_text span,
-  .bottom-details .bottom_text a {
+}
+
+.bottom-details span,
+.bottom-details a {
     font-size: 14px;
     font-weight: 300;
     color: #fff;
     opacity: 0.8;
     text-decoration: none;
-  }
-  .bottom-details .bottom_text a:hover {
+}
+
+.bottom-details a:hover {
     opacity: 1;
     text-decoration: underline;
-  }
-  .bottom-details .bottom_text a {
+}
+
+.bottom-details a {
     margin-right: 10px;
-  }
-  
+}
+
+.bottom-text {
+    font-size: 19px !important;
+    text-decoration: none;
+    align-content: center;
+}
