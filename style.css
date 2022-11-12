@@ -8,6 +8,7 @@
 
 body {
     min-height: 100vh;
+    background-color: #F0F8FF !important;
 }
 
 
@@ -258,4 +259,10 @@ footer .bottom-details .bottom_text {
     font-size: 19px !important;
     text-decoration: none;
     align-content: center;
+}
+#header-cfp{
+    background-color: black;
+    color: white;
+    margin-left: 8% !important;
+    padding: 6px !important;
 }
