@@ -8,16 +8,27 @@
 
 body {
     min-height: 100vh;
-    background-color: #F0F8FF !important;
+    background-color: #fbfbfd !important;
 }
 
 
 /* -----------------company----------------------- */
+.main-head {
+    padding-top: 30px;
+    text-align:center;
+}
+
+.main-head span {
+    color: #008BC8;
+}
+
 
 .company {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 40px;
+    background-color: #D8EBF4;
 }
 
 .company-info {
@@ -69,7 +80,8 @@ body {
 }
 
 .company-info p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    line-height: 1.5em;
 }
 
 
